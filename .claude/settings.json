@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(///wsl.localhost/Ubuntu/**)",
+      "Write(///wsl.localhost/Ubuntu/**)",
+      "Edit(///wsl.localhost/Ubuntu/**)",
+      "Bash(*)"
+    ]
+  }
+}

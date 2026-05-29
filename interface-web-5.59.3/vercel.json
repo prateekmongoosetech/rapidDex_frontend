@@ -1,0 +1,9 @@
+{
+  "buildCommand": "yarn turbo run build:production --filter=@uniswap/interface",
+  "outputDirectory": "apps/web/build",
+  "installCommand": "yarn install --immutable",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
+

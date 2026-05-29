@@ -1,0 +1,24 @@
+IPFS hash of the deployment:
+- CIDv0: `QmRCrXbMR4EUz9dAJvL4pBfVtVGkj6sB7zNZo6H8V65jDb`
+- CIDv1: `bafybeibkspdr2mrrvuxfqo2kh7aaasnzbjlxixfic2dpqtbnsq4qw25o6i`
+
+The latest release is always mirrored at [app.uniswap.org](https://app.uniswap.org).
+
+You can also access the Uniswap Interface from an IPFS gateway.
+**BEWARE**: The Uniswap interface uses [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to remember your settings, such as which tokens you have imported.
+**You should always use an IPFS gateway that enforces origin separation**, or our hosted deployment of the latest release at [app.uniswap.org](https://app.uniswap.org).
+Your Uniswap settings are never remembered across different URLs.
+
+IPFS gateways:
+- https://bafybeibkspdr2mrrvuxfqo2kh7aaasnzbjlxixfic2dpqtbnsq4qw25o6i.ipfs.dweb.link/
+- https://bafybeibkspdr2mrrvuxfqo2kh7aaasnzbjlxixfic2dpqtbnsq4qw25o6i.ipfs.cf-ipfs.com/
+- [ipfs://QmRCrXbMR4EUz9dAJvL4pBfVtVGkj6sB7zNZo6H8V65jDb/](ipfs://QmRCrXbMR4EUz9dAJvL4pBfVtVGkj6sB7zNZo6H8V65jDb/)
+
+### 5.59.3 (2024-11-21)
+
+
+### Bug Fixes
+
+* **web:** only pad preference menu instead of all nav [prod] (#13994) 1809d8c
+
+
