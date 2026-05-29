@@ -5,19 +5,17 @@ RUN apk add --no-cache git python3 make g++
 
 WORKDIR /app
 
-# Copy yarn release binary + config first for cache efficiency
-COPY .yarn .yarn
-COPY .yarnrc.yml package.json yarn.lock ./
+# Railway build context = repo root; source lives under interface-web-5.59.3/
+COPY interface-web-5.59.3/.yarn .yarn
+COPY interface-web-5.59.3/.yarnrc.yml interface-web-5.59.3/package.json interface-web-5.59.3/yarn.lock ./
 
-# Copy all workspace manifests so yarn install resolves the full workspace graph
-COPY apps/web/package.json apps/web/package.json
-COPY packages/ packages/
+COPY interface-web-5.59.3/apps/web/package.json apps/web/package.json
+COPY interface-web-5.59.3/packages/ packages/
 
 ENV HUSKY=0
 RUN yarn install --immutable
 
-# Copy full source
-COPY . .
+COPY interface-web-5.59.3/ .
 
 # craco build needs git rev-parse; create a stub repo
 RUN git init -q && \
