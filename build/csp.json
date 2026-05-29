@@ -1,0 +1,10 @@
+{
+  "defaultSrc": ["*"],
+  "scriptSrc": ["*", "'unsafe-inline'", "'unsafe-eval'"],
+  "styleSrc": ["*", "'unsafe-inline'"],
+  "imgSrc": ["*"],
+  "connectSrc": ["*"],
+  "frameSrc": ["*"],
+  "fontSrc": ["*"],
+  "workerSrc": ["*"]
+}
